@@ -54,7 +54,7 @@ export default function Navbar() {
                 </Link>
                 <div className="flex items-center gap-4 ml-2">
                     <Link
-                        href="#contact"
+                        href="/book"
                         className="bg-ai-gold text-white px-5 py-2.5 rounded-full flex items-center gap-2 font-medium text-[15px] hover:bg-opacity-90 transition-all"
                     >
                         {t.nav.letsTalk}
@@ -140,7 +140,7 @@ export default function Navbar() {
                             {t.nav.about}
                         </Link>
                         <Link
-                            href="#contact"
+                            href="/book"
                             className="bg-ai-gold text-white px-6 py-3 rounded-full flex items-center justify-center gap-2 font-medium text-lg hover:bg-opacity-90 transition-all mt-4"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -18,10 +19,10 @@ export default function Home() {
             <span className="whitespace-normal md:whitespace-nowrap">{t.hero.headlinePart2}</span>
           </h1>
 
-          <button className="bg-[#a8824f] text-white px-7 py-3.5 rounded-full flex items-center gap-2 font-medium text-lg hover:bg-opacity-90 transition-all">
+          <Link href="/book" className="bg-[#a8824f] text-white px-7 py-3.5 rounded-full flex items-center gap-2 font-medium text-lg hover:bg-opacity-90 transition-all w-fit">
             {t.hero.letsTalk}
             <ArrowRight className="w-5 h-5 ml-1" />
-          </button>
+          </Link>
         </div>
       </main>
     </div>
