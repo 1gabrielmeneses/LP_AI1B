@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-jakarta: var(--font-jakarta);
+  --font-inter: var(--font-inter);
+  
+  --color-ai-gold: #A68048;
+  --color-ai-bg: #e6e5e1;
+  --color-ai-text: #5A554E;
+}
