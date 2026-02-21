@@ -17,6 +17,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     useEffect(() => {
         const savedLang = localStorage.getItem("user_lang") as Language | null;
         if (savedLang && translations[savedLang]) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguageState(savedLang);
             return;
         }
@@ -24,10 +25,13 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         const browserLang = navigator.language.toLowerCase();
 
         if (browserLang.startsWith("pt")) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguageState("pt");
         } else if (browserLang.startsWith("es")) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguageState("es");
         } else {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguageState("en");
         }
     }, []);

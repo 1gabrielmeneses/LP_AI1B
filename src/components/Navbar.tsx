@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Globe } from "lucide-react";
+import { ArrowRight, Globe, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState, useRef, useEffect } from "react";
@@ -9,6 +9,7 @@ import { Language } from "@/translations";
 export default function Navbar() {
     const { t, language, setLanguage } = useLanguage();
     const [isLangOpen, setIsLangOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     // Close dropdown on outside click
@@ -28,16 +29,17 @@ export default function Navbar() {
     };
 
     return (
-        <header className="w-full relative z-10 py-8 px-8 lg:px-16 flex items-center justify-between bg-white">
-            <div className="flex-1">
-                <Link href="/" className="text-3xl font-semibold text-ai-gold tracking-tight lowercase first-letter:uppercase inline-flex">
+        <header className="w-full relative z-40 py-6 px-6 md:py-8 md:px-8 lg:px-16 flex items-center justify-between bg-white">
+            <div className="flex-1 z-50">
+                <Link href="/" className="text-2xl md:text-3xl font-semibold text-ai-gold tracking-tight lowercase first-letter:uppercase inline-flex">
                     <span className="first-letter:uppercase">AI</span>
                     <span className="first-letter:capitalize">1</span>
                     <span className="first-letter:capitalize">Business</span>
                 </Link>
             </div>
 
-            <nav className="flex items-center gap-8">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-8">
                 <Link
                     href="#case-studies"
                     className="text-ai-text hover:text-ai-gold transition-colors font-medium text-[15px]"
@@ -70,29 +72,84 @@ export default function Navbar() {
 
                         {isLangOpen && (
                             <div className="absolute top-full right-0 mt-2 w-40 bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden flex flex-col py-1 z-50">
-                                <button
-                                    onClick={() => handleLanguageChange('en')}
-                                    className={`text-left px-4 py-2.5 text-sm font-medium hover:bg-gray-50 transition-colors ${language === 'en' ? 'text-ai-gold' : 'text-ai-text'}`}
-                                >
-                                    Inglês
-                                </button>
-                                <button
-                                    onClick={() => handleLanguageChange('pt')}
-                                    className={`text-left px-4 py-2.5 text-sm font-medium hover:bg-gray-50 transition-colors ${language === 'pt' ? 'text-ai-gold' : 'text-ai-text'}`}
-                                >
-                                    Português
-                                </button>
-                                <button
-                                    onClick={() => handleLanguageChange('es')}
-                                    className={`text-left px-4 py-2.5 text-sm font-medium hover:bg-gray-50 transition-colors ${language === 'es' ? 'text-ai-gold' : 'text-ai-text'}`}
-                                >
-                                    Espanhol
-                                </button>
+                                {(["en", "pt", "es"] as Language[]).map((lang, idx) => (
+                                    <button
+                                        key={idx}
+                                        onClick={() => handleLanguageChange(lang)}
+                                        className={`text-left px-4 py-2.5 text-sm font-medium hover:bg-gray-50 transition-colors ${language === lang ? 'text-ai-gold' : 'text-ai-text'}`}
+                                    >
+                                        {lang === 'en' ? 'Inglês' : lang === 'pt' ? 'Português' : 'Espanhol'}
+                                    </button>
+                                ))}
                             </div>
                         )}
                     </div>
                 </div>
             </nav>
+
+            {/* Mobile Navigation controls */}
+            <div className="flex md:hidden items-center gap-3 z-50">
+                <div className="relative">
+                    <button
+                        onClick={() => setIsLangOpen(!isLangOpen)}
+                        className="flex items-center justify-center p-2 rounded-full border border-gray-200 text-ai-text hover:text-ai-gold transition-colors bg-white shadow-sm"
+                        aria-label="Select language"
+                    >
+                        <Globe className="w-4 h-4" />
+                    </button>
+
+                    {isLangOpen && (
+                        <div className="absolute top-full right-0 mt-2 w-36 bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden flex flex-col py-1 z-50">
+                            {(["en", "pt", "es"] as Language[]).map((lang, idx) => (
+                                <button
+                                    key={idx}
+                                    onClick={() => handleLanguageChange(lang)}
+                                    className={`text-left px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors ${language === lang ? 'text-ai-gold' : 'text-ai-text'}`}
+                                >
+                                    {lang === 'en' ? 'Inglês' : lang === 'pt' ? 'Português' : 'Espanhol'}
+                                </button>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
+                <button
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    className="flex justify-center items-center p-2 text-ai-text hover:text-ai-gold transition-colors"
+                >
+                    {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                </button>
+            </div>
+
+            {/* Mobile Menu Overlay */}
+            {isMobileMenuOpen && (
+                <div className="fixed inset-0 top-0 left-0 w-full h-full bg-white z-40 flex flex-col pt-24 px-6 md:hidden">
+                    <nav className="flex flex-col gap-6">
+                        <Link
+                            href="#case-studies"
+                            className="text-2xl font-semibold text-ai-text hover:text-ai-gold transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t.nav.caseStudies}
+                        </Link>
+                        <Link
+                            href="#about"
+                            className="text-2xl font-semibold text-ai-text hover:text-ai-gold transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t.nav.about}
+                        </Link>
+                        <Link
+                            href="#contact"
+                            className="bg-ai-gold text-white px-6 py-3 rounded-full flex items-center justify-center gap-2 font-medium text-lg hover:bg-opacity-90 transition-all mt-4"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t.nav.letsTalk}
+                            <ArrowRight className="w-5 h-5" />
+                        </Link>
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }
