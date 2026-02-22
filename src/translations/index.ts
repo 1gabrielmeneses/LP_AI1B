@@ -54,7 +54,7 @@ export const translations: Translations = {
             letsTalk: "Let's talk",
         },
         agentic: {
-            title: 'Your journey to an agentic transformation',
+            title: 'Your journey to an AI-First transformation',
             description: 'Our holistic approach guides companies through the transformation and ensures scalability of agentic capabilities.',
             step1: {
                 title: 'AI-first Workflows',
@@ -92,8 +92,8 @@ export const translations: Translations = {
             letsTalk: 'Vamos conversar',
         },
         agentic: {
-            title: 'Sua jornada para uma transformação agêntica',
-            description: 'Nossa abordagem holística guia empresas através da transformação e garante escalabilidade de capacidades agênticas.',
+            title: 'Sua jornada para uma transformação AI-First',
+            description: 'Nossa abordagem holística guia empresas através de metodologias validadas para garantir máxima eficiência operacional, reduzindo custos e aumentando margens.',
             step1: {
                 title: 'Workflows AI-first',
                 description: 'Redesenhamos seus processos colocando a inteligência artificial no centro das operações',
@@ -104,7 +104,7 @@ export const translations: Translations = {
             },
             step3: {
                 title: 'Tecnologia',
-                description: 'Construímos e implementamos a infraestrutura agêntica ideal para o seu negócio',
+                description: 'Construímos e implementamos a infraestrutura AI-First ideal para o seu negócio',
             },
             venn: {
                 pessoas: 'Pessoas',
@@ -130,7 +130,7 @@ export const translations: Translations = {
             letsTalk: 'Hablemos',
         },
         agentic: {
-            title: 'Tu viaje hacia una transformación agéntica',
+            title: 'Tu viaje hacia una transformación AI-First',
             description: 'Nuestro enfoque holístico guía a las empresas a través de la transformación y garantiza la escalabilidad de las capacidades agénticas.',
             step1: {
                 title: 'Workflows AI-first',
