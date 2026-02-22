@@ -67,6 +67,11 @@ type Translations = {
                 value: string;
                 subtext: string;
             };
+        },
+        finalCta: {
+            title: string;
+            subtitle: string;
+            button: string;
         }
     }
 };
@@ -138,6 +143,11 @@ export const translations: Translations = {
                 value: '+ R$ 59,000/month',
                 subtext: 'of Freed Capital'
             }
+        },
+        finalCta: {
+            title: 'You are one step away from generating 98% in savings',
+            subtitle: 'Schedule a meeting with an expert consultant and learn more.',
+            button: 'Schedule a conversation'
         }
     },
     pt: {
@@ -206,6 +216,11 @@ export const translations: Translations = {
                 value: '+ R$ 59.000/mês',
                 subtext: 'de Capital Liberado'
             }
+        },
+        finalCta: {
+            title: 'Você está a um passo de gerar 98% de economia',
+            subtitle: 'Agende uma reunião com um consultor especialista e descubra como que a sua empresa também pode ter esse nível de retorno com a AI1B.',
+            button: 'Agendar uma conversa'
         }
     },
     es: {
@@ -274,6 +289,11 @@ export const translations: Translations = {
                 value: '+ R$ 59.000/mes',
                 subtext: 'de Capital Liberado'
             }
+        },
+        finalCta: {
+            title: 'Estás a un paso de generar un 98% de ahorro',
+            subtitle: 'Programa una reunión con un consultor experto y obtén más información.',
+            button: 'Programar una conversación'
         }
     }
 };
