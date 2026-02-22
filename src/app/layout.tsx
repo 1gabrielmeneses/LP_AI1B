@@ -29,6 +29,16 @@ export default function RootLayout({
       <body
         className={`${jakarta.variable} ${inter.variable} font-jakarta antialiased bg-[#e6e5e1] text-[#5A554E] min-h-screen relative`}
       >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed inset-0 w-full h-full object-cover z-[-2]"
+        >
+          <source src="/media/backgroundvideo.webm" type="video/webm" />
+        </video>
+        <div className="fixed inset-0 bg-black/80 z-[-1]"></div>
         <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
         <LanguageProvider>
           {children}

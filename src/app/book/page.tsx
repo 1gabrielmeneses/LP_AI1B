@@ -24,7 +24,7 @@ export default function BookPage() {
     const timeSlots = timeFormat === "12h" ? timeSlots12 : timeSlots24;
 
     return (
-        <main className="min-h-screen bg-[#f3f4f6] font-inter">
+        <main className="min-h-screen font-inter w-full">
 
             <div className="pt-24 pb-12 px-4 md:px-8 flex flex-col items-center justify-center gap-6">
                 <AnimatePresence mode="wait">
