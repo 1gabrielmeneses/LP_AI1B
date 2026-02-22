@@ -12,27 +12,13 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-    const [language, setLanguageState] = useState<Language>('en');
+    const [language, setLanguageState] = useState<Language>('pt');
 
     useEffect(() => {
         const savedLang = localStorage.getItem("user_lang") as Language | null;
         if (savedLang && translations[savedLang]) {
             // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguageState(savedLang);
-            return;
-        }
-
-        const browserLang = navigator.language.toLowerCase();
-
-        if (browserLang.startsWith("pt")) {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
-            setLanguageState("pt");
-        } else if (browserLang.startsWith("es")) {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
-            setLanguageState("es");
-        } else {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
-            setLanguageState("en");
         }
     }, []);
 
