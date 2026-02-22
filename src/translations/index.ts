@@ -37,6 +37,36 @@ type Translations = {
                 resultados: string;
             };
             cta: string;
+        },
+        financial: {
+            tag: string;
+            title: string;
+            description: string;
+            step1: {
+                title: string;
+                description: string;
+            };
+            step2: {
+                title: string;
+                description: string;
+            };
+            step3: {
+                title: string;
+                description: string;
+            };
+            card1: {
+                title: string;
+                beforeLabel: string;
+                beforeValue: string;
+                afterLabel: string;
+                afterValue: string;
+                reductionLabel: string;
+            };
+            card2: {
+                title: string;
+                value: string;
+                subtext: string;
+            };
         }
     }
 };
@@ -78,6 +108,36 @@ export const translations: Translations = {
                 resultados: 'Resultados'
             },
             cta: 'Vamos conversar'
+        },
+        financial: {
+            tag: 'FINANCIAL IMPACT',
+            title: 'From R$ 60,000 to less than R$ 1,000 per month',
+            description: 'How we restructured the financial operation using AI to reduce operational costs by 98.3% while increasing efficiency.',
+            step1: {
+                title: 'Diagnosis',
+                description: 'Deep analysis of fixed costs and manual bottlenecks.'
+            },
+            step2: {
+                title: 'Automation',
+                description: 'Implementation of AI agents for repetitive tasks.'
+            },
+            step3: {
+                title: 'Optimization',
+                description: 'Continuous monitoring and capital reallocation.'
+            },
+            card1: {
+                title: 'OPERATIONAL COST REDUCTION',
+                beforeLabel: 'Monthly Operational Cost (Before)',
+                beforeValue: 'R$ 60,000.00',
+                afterLabel: 'Monthly Operational Cost (After)',
+                afterValue: '< R$ 1,000.00',
+                reductionLabel: '98% reduction'
+            },
+            card2: {
+                title: 'Financial Impact',
+                value: '+ R$ 59,000/month',
+                subtext: 'of Freed Capital'
+            }
         }
     },
     pt: {
@@ -116,6 +176,36 @@ export const translations: Translations = {
                 resultados: 'Resultados'
             },
             cta: 'Vamos conversar'
+        },
+        financial: {
+            tag: 'FINANCIAL IMPACT',
+            title: 'De R$ 60.000 para menos de R$ 1.000 por mês',
+            description: 'Como reestruturamos a operação financeira utilizando IA para reduzir custos operacionais em 98.3% enquanto aumentamos a eficiência.',
+            step1: {
+                title: 'Diagnóstico',
+                description: 'Análise profunda de custos fixos e gargalos manuais.'
+            },
+            step2: {
+                title: 'Automação',
+                description: 'Implementação de agentes de IA para tarefas repetitivas.'
+            },
+            step3: {
+                title: 'Otimização',
+                description: 'Monitoramento contínuo e realocação de capital.'
+            },
+            card1: {
+                title: 'REDUÇÃO DE CUSTOS OPERACIONAIS',
+                beforeLabel: 'Custo Operacional Mensal (Antes)',
+                beforeValue: 'R$ 60.000,00',
+                afterLabel: 'Custo Operacional Mensal (Depois)',
+                afterValue: '< R$ 1.000,00',
+                reductionLabel: '98% de redução'
+            },
+            card2: {
+                title: 'Impacto Financeiro',
+                value: '+ R$ 59.000/mês',
+                subtext: 'de Capital Liberado'
+            }
         }
     },
     es: {
@@ -154,6 +244,36 @@ export const translations: Translations = {
                 resultados: 'Resultados'
             },
             cta: 'Hablemos'
+        },
+        financial: {
+            tag: 'IMPACTO FINANCIERO',
+            title: 'De R$ 60.000 a menos de R$ 1.000 por mes',
+            description: 'Cómo reestructuramos la operación financiera utilizando IA para reducir costos operativos en un 98.3% mientras aumentamos la eficiencia.',
+            step1: {
+                title: 'Diagnóstico',
+                description: 'Análisis profundo de costos fijos y cuellos de botella manuales.'
+            },
+            step2: {
+                title: 'Automatización',
+                description: 'Implementación de agentes de IA para tareas repetitivas.'
+            },
+            step3: {
+                title: 'Optimización',
+                description: 'Monitoreo continuo y reasignación de capital.'
+            },
+            card1: {
+                title: 'REDUCCIÓN DE COSTOS OPERATIVOS',
+                beforeLabel: 'Costo Operativo Mensual (Antes)',
+                beforeValue: 'R$ 60.000,00',
+                afterLabel: 'Costo Operativo Mensal (Después)',
+                afterValue: '< R$ 1.000,00',
+                reductionLabel: '98% de reducción'
+            },
+            card2: {
+                title: 'Impacto Financiero',
+                value: '+ R$ 59.000/mes',
+                subtext: 'de Capital Liberado'
+            }
         }
     }
 };

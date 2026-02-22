@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import AgenticTransformation from "@/components/AgenticTransformation";
+import FinancialImpact from "@/components/FinancialImpact";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -31,6 +32,7 @@ export default function Home() {
       </div>
 
       <AgenticTransformation />
+      <FinancialImpact />
     </div>
   );
 }
