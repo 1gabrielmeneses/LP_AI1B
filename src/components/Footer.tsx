@@ -18,7 +18,7 @@ export default function Footer() {
                         </h4>
                         <a
                             href={`mailto:${t.footer.email}`}
-                            className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]"
+                            className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation"
                         >
                             {t.footer.email}
                         </a>
@@ -31,17 +31,17 @@ export default function Footer() {
                         </h4>
                         <ul className="flex flex-col gap-5">
                             <li>
-                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.product}
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.contact}
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.aboutUs}
                                 </Link>
                             </li>
@@ -55,22 +55,22 @@ export default function Footer() {
                         </h4>
                         <ul className="flex flex-col gap-5">
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.linkedin}
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.youtube}
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.spotify}
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.instagram}
                                 </a>
                             </li>
@@ -84,12 +84,12 @@ export default function Footer() {
                         </h4>
                         <ul className="flex flex-col gap-5">
                             <li>
-                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <Link href="/privacy-policy" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.privacy}
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px]">
+                                <Link href="/terms-of-use" className="text-[#5A554E] hover:text-[#a8824f] transition-all duration-300 text-[15px] hover-underline-animation">
                                     {t.footer.terms}
                                 </Link>
                             </li>

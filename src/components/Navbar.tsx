@@ -42,13 +42,13 @@ export default function Navbar() {
             <nav className="hidden md:flex items-center gap-8">
                 <Link
                     href="#case-studies"
-                    className="text-ai-text hover:text-ai-gold transition-colors font-medium text-[15px]"
+                    className="text-ai-text hover:text-ai-gold transition-colors font-medium text-[15px] hover-underline-animation"
                 >
                     {t.nav.caseStudies}
                 </Link>
                 <Link
                     href="#about"
-                    className="text-ai-text hover:text-ai-gold transition-colors font-medium text-[15px]"
+                    className="text-ai-text hover:text-ai-gold transition-colors font-medium text-[15px] hover-underline-animation"
                 >
                     {t.nav.about}
                 </Link>
@@ -127,14 +127,14 @@ export default function Navbar() {
                     <nav className="flex flex-col gap-6">
                         <Link
                             href="#case-studies"
-                            className="text-2xl font-semibold text-ai-text hover:text-ai-gold transition-colors"
+                            className="text-2xl font-semibold text-ai-text hover:text-ai-gold transition-colors hover-underline-animation"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {t.nav.caseStudies}
                         </Link>
                         <Link
                             href="#about"
-                            className="text-2xl font-semibold text-ai-text hover:text-ai-gold transition-colors"
+                            className="text-2xl font-semibold text-ai-text hover:text-ai-gold transition-colors hover-underline-animation"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {t.nav.about}

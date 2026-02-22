@@ -97,6 +97,22 @@ type Translations = {
             terms: string;
             copyright: string;
         };
+        privacyPolicy: {
+            title: string;
+            lastUpdated: string;
+            sections: {
+                title: string;
+                content: string;
+            }[];
+        };
+        termsOfUse: {
+            title: string;
+            lastUpdated: string;
+            sections: {
+                title: string;
+                content: string;
+            }[];
+        };
     }
 };
 
@@ -196,6 +212,78 @@ export const translations: Translations = {
             privacy: 'Privacy Policy',
             terms: 'Terms of Use',
             copyright: '© 2026 AI1Business. All rights reserved.'
+        },
+        privacyPolicy: {
+            title: 'Privacy Policy',
+            lastUpdated: 'Last updated: January 2026',
+            sections: [
+                {
+                    title: '1. Introduction',
+                    content: 'AI1Business values the privacy of our users. This Privacy Policy describes how we collect, use, store, and protect your personal information when you use our services.'
+                },
+                {
+                    title: '2. Information Collected',
+                    content: 'We collect information you provide directly to us, such as name, email, phone number, and company data when filling out forms or contacting us. We may also automatically collect usage data, such as IP address, browser type, and pages visited.'
+                },
+                {
+                    title: '3. Use of Information',
+                    content: 'We use your information to: provide and improve our services; personalize your experience; send relevant communications about our products; respond to your requests; and comply with legal obligations.'
+                },
+                {
+                    title: '4. Data Sharing',
+                    content: 'We do not sell your personal information. We may share data with trusted partners who assist us in operating our business, always under confidentiality agreements, or when required by law.'
+                },
+                {
+                    title: '5. Security',
+                    content: 'We implement technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction.'
+                },
+                {
+                    title: '6. Your Rights',
+                    content: 'You have the right to access, correct, delete, or port your personal data. To exercise these rights, please contact us at contato@ai1business.com.'
+                },
+                {
+                    title: '7. Contact',
+                    content: 'If you have questions about this Privacy Policy, please contact us at: contato@ai1business.com'
+                }
+            ]
+        },
+        termsOfUse: {
+            title: 'Terms of Use',
+            lastUpdated: 'Last updated: January 2026',
+            sections: [
+                {
+                    title: '1. Acceptance of Terms',
+                    content: 'By accessing and using AI1Business services, you agree to comply with these Terms of Use. If you do not agree with any part of these terms, do not use our services.'
+                },
+                {
+                    title: '2. Description of Services',
+                    content: 'AI1Business offers Artificial Intelligence-based business automation solutions, including AI agents for prospecting, lead qualification, follow-up, and commercial management.'
+                },
+                {
+                    title: '3. Acceptable Use',
+                    content: 'You agree to use our services only for lawful purposes and in accordance with these Terms. It is prohibited to: use the services for illegal activities; attempt to access unauthorized areas of the system; interfere with the operation of the services; or violate the rights of third parties.'
+                },
+                {
+                    title: '4. Intellectual Property',
+                    content: 'All content, trademarks, logos, and technology of AI1Business are our property or licensed to us. No intellectual property rights are transferred to you by using the services.'
+                },
+                {
+                    title: '5. Limitation of Liability',
+                    content: 'AI1Business is not liable for indirect, incidental, or consequential damages arising from the use of our services. Our services are provided "as is", without express or implied warranties.'
+                },
+                {
+                    title: '6. Modifications',
+                    content: 'We reserve the right to modify these Terms at any time. Significant changes will be communicated through the website or by email.'
+                },
+                {
+                    title: '7. Governing Law',
+                    content: 'These Terms are governed by the laws of the Federative Republic of Brazil. Any dispute will be resolved in the competent courts of Brazil.'
+                },
+                {
+                    title: '8. Contact',
+                    content: 'For questions about these Terms of Use, please contact us at: contato@ai1business.com'
+                }
+            ]
         }
     },
     pt: {
@@ -293,6 +381,78 @@ export const translations: Translations = {
             privacy: 'Política de Privacidade',
             terms: 'Termos de Uso',
             copyright: '© 2026 AI1Business. Todos os direitos reservados.'
+        },
+        privacyPolicy: {
+            title: 'Política de Privacidade',
+            lastUpdated: 'Última atualização: Janeiro de 2026',
+            sections: [
+                {
+                    title: '1. Introdução',
+                    content: 'A AI1Business valoriza a privacidade de seus usuários. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais quando você utiliza nossos serviços.'
+                },
+                {
+                    title: '2. Informações Coletadas',
+                    content: 'Coletamos informações que você nos fornece diretamente, como nome, e-mail, telefone e dados da empresa ao preencher formulários ou entrar em contato conosco. Também podemos coletar dados de uso automaticamente, como endereço IP, tipo de navegador e páginas visitadas.'
+                },
+                {
+                    title: '3. Uso das Informações',
+                    content: 'Utilizamos suas informações para: fornecer e melhorar nossos serviços; personalizar sua experiência; enviar comunicações relevantes sobre nossos produtos; responder a suas solicitações; e cumprir obrigações legais.'
+                },
+                {
+                    title: '4. Compartilhamento de Dados',
+                    content: 'Não vendemos suas informações pessoais. Podemos compartilhar dados com parceiros de confiança que nos auxiliam na operação do negócio, sempre sob acordos de confidencialidade, ou quando exigido por lei.'
+                },
+                {
+                    title: '5. Segurança',
+                    content: 'Implementamos medidas técnicas e organizacionais para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição.'
+                },
+                {
+                    title: '6. Seus Direitos',
+                    content: 'Você tem direito a acessar, corrigir, excluir ou portar seus dados pessoais. Para exercer esses direitos, entre em contato conosco pelo e-mail contato@ai1business.com.'
+                },
+                {
+                    title: '7. Contato',
+                    content: 'Se tiver dúvidas sobre esta Política de Privacidade, entre em contato pelo e-mail: contato@ai1business.com'
+                }
+            ]
+        },
+        termsOfUse: {
+            title: 'Termos de Uso',
+            lastUpdated: 'Última atualização: Janeiro de 2026',
+            sections: [
+                {
+                    title: '1. Aceitação dos Termos',
+                    content: 'Ao acessar e utilizar os serviços da AI1Business, você concorda em cumprir estes Termos de Uso. Se não concordar com qualquer parte destes termos, não utilize nossos serviços.'
+                },
+                {
+                    title: '2. Descrição dos Serviços',
+                    content: 'A AI1Business oferece soluções de automação comercial baseadas em Inteligência Artificial, incluindo agentes de IA para prospecção, qualificação de leads, follow-up e gestão comercial.'
+                },
+                {
+                    title: '3. Uso Aceitável',
+                    content: 'Você concorda em usar nossos serviços apenas para fins legais e de acordo com estes Termos. É proibido: usar os serviços para atividades ilegais; tentar acessar áreas não autorizadas do sistema; interferir na operação dos serviços; ou violar direitos de terceiros.'
+                },
+                {
+                    title: '4. Propriedade Intelectual',
+                    content: 'Todo o conteúdo, marcas, logotipos e tecnologia da AI1Business são de nossa propriedade ou licenciados para nós. Nenhum direito de propriedade intelectual é transferido a você pelo uso dos serviços.'
+                },
+                {
+                    title: '5. Limitação de Responsabilidade',
+                    content: 'A AI1Business não se responsabiliza por danos indiretos, incidentais ou consequenciais decorrentes do uso de nossos serviços. Nossos serviços são fornecidos "como estão", sem garantias expressas ou implícitas.'
+                },
+                {
+                    title: '6. Modificações',
+                    content: 'Reservamo-nos o direito de modificar estes Termos a qualquer momento. Alterações significativas serão comunicadas através do site ou por e-mail.'
+                },
+                {
+                    title: '7. Lei Aplicável',
+                    content: 'Estes Termos são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida nos tribunais competentes do Brasil.'
+                },
+                {
+                    title: '8. Contato',
+                    content: 'Para dúvidas sobre estes Termos de Uso, entre em contato pelo e-mail: contato@ai1business.com'
+                }
+            ]
         }
     },
     es: {
@@ -390,6 +550,78 @@ export const translations: Translations = {
             privacy: 'Política de Privacidad',
             terms: 'Términos de Uso',
             copyright: '© 2026 AI1Business. Todos los derechos reservados.'
+        },
+        privacyPolicy: {
+            title: 'Política de Privacidad',
+            lastUpdated: 'Última actualización: Enero de 2026',
+            sections: [
+                {
+                    title: '1. Introducción',
+                    content: 'AI1Business valora la privacidad de sus usuarios. Esta Política de Privacidad describe cómo recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza nuestros servicios.'
+                },
+                {
+                    title: '2. Información Recopilada',
+                    content: 'Recopilamos información que usted nos proporciona directamente, como nombre, correo electrónico, teléfono y datos de la empresa al completar formularios o contactarnos. También podemos recopilar datos de uso automáticamente, como dirección IP, tipo de navegador y páginas visitadas.'
+                },
+                {
+                    title: '3. Uso de la Información',
+                    content: 'Utilizamos su información para: proporcionar y mejorar nuestros servicios; personalizar su experiencia; enviar comunicaciones relevantes sobre nuestros productos; responder a sus solicitudes; y cumplir con obligaciones legales.'
+                },
+                {
+                    title: '4. Compartir Datos',
+                    content: 'No vendemos su información personal. Podemos compartir datos con socios de confianza que nos asisten en la operación del negocio, siempre bajo acuerdos de confidencialidad, o cuando lo exija la ley.'
+                },
+                {
+                    title: '5. Seguridad',
+                    content: 'Implementamos medidas técnicas y organizativas para proteger su información contra acceso no autorizado, alteración, divulgación o destrucción.'
+                },
+                {
+                    title: '6. Sus Derechos',
+                    content: 'Usted tiene derecho a acceder, corregir, eliminar o portar sus datos personales. Para ejercer estos derechos, comuníquese con nosotros al correo electrónico contato@ai1business.com.'
+                },
+                {
+                    title: '7. Contacto',
+                    content: 'Si tiene preguntas sobre esta Política de Privacidad, comuníquese al correo electrónico: contato@ai1business.com'
+                }
+            ]
+        },
+        termsOfUse: {
+            title: 'Términos de Uso',
+            lastUpdated: 'Última actualización: Enero de 2026',
+            sections: [
+                {
+                    title: '1. Aceptación de los Términos',
+                    content: 'Al acceder y utilizar los servicios de AI1Business, usted acepta cumplir con estos Términos de Uso. Si no está de acuerdo con alguna parte de estos términos, no utilice nuestros servicios.'
+                },
+                {
+                    title: '2. Descripción de los Servicios',
+                    content: 'AI1Business ofrece soluciones de automatización comercial basadas en Inteligencia Artificial, incluyendo agentes de IA para prospección, calificación de leads, seguimiento y gestión comercial.'
+                },
+                {
+                    title: '3. Uso Aceptable',
+                    content: 'Usted acepta usar nuestros servicios solo para fines legales y de acuerdo con estos Términos. Está prohibido: usar los servicios para actividades ilegales; intentar acceder a áreas no autorizadas del sistema; interferir con la operación de los servicios; o violar los derechos de terceros.'
+                },
+                {
+                    title: '4. Propiedad Intelectual',
+                    content: 'Todo el contenido, marcas, logotipos y tecnología de AI1Business son de nuestra propiedad o están bajo licencia. No se le transfiere ningún derecho de propiedad intelectual por el uso de los servicios.'
+                },
+                {
+                    title: '5. Limitación de Responsabilidad',
+                    content: 'AI1Business no es responsable por daños indirectos, incidentales o consecuentes derivados del uso de nuestros servicios. Nuestros servicios se proporcionan "tal cual", sin garantías expresas o implícitas.'
+                },
+                {
+                    title: '6. Modificaciones',
+                    content: 'Nos reservamos el derecho de modificar estos Términos en cualquier momento. Los cambios significativos se comunicarán a través del sitio web o por correo electrónico.'
+                },
+                {
+                    title: '7. Ley Aplicable',
+                    content: 'Estos Términos se rigen por las leyes de la República Federativa de Brasil. Cualquier disputa se resolverá en los tribunales competentes de Brasil.'
+                },
+                {
+                    title: '8. Contacto',
+                    content: 'Para preguntas sobre estos Términos de Uso, contáctenos en: contato@ai1business.com'
+                }
+            ]
         }
     }
 };
