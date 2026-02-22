@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import AgenticTransformation from "@/components/AgenticTransformation";
 import FinancialImpact from "@/components/FinancialImpact";
 import FinalCTA from "@/components/FinalCTA";
+import AboutSection from "@/components/AboutSection";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -35,6 +36,7 @@ export default function Home() {
       <AgenticTransformation />
       <FinancialImpact />
       <FinalCTA />
+      <AboutSection />
     </div>
   );
 }

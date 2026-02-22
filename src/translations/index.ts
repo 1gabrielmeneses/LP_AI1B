@@ -72,6 +72,13 @@ type Translations = {
             title: string;
             subtitle: string;
             button: string;
+        },
+        about: {
+            greeting: string;
+            paragraph1: string;
+            paragraph2: string;
+            name: string;
+            role: string;
         }
     }
 };
@@ -148,6 +155,13 @@ export const translations: Translations = {
             title: 'You are one step away from generating 98% in savings',
             subtitle: 'Schedule a meeting with an expert consultant and learn more.',
             button: 'Schedule a conversation'
+        },
+        about: {
+            greeting: 'Hi and welcome to our site!',
+            paragraph1: 'I\'m Charlotte the VP of Sales and Operations. I have been with the Powerbilt Steel family of companies for over 11 years. One of the things I like best about my job is assisting our customers to make their projects a reality. Customers call in with an idea and a member of our talented team helps them design a building to best suit not only their needs but also their budget. Our team really cares and strives to ensure every visitor has a great experience! Here you truly are a part of the family!',
+            paragraph2: 'Outside of work I love spending time outdoors with family and friends. Camping, hiking, and paddle boarding are a few of my favorite activities. I\'m an animal lover and have 2 dogs that sometimes come and hang out at the office with us! One of my favorite sayings is "Life is an adventure not a destination!"',
+            name: 'Stephan Michaels',
+            role: 'Founder'
         }
     },
     pt: {
@@ -221,6 +235,13 @@ export const translations: Translations = {
             title: 'Você está a um passo de gerar 98% de economia',
             subtitle: 'Agende uma reunião com um consultor especialista e descubra como que a sua empresa também pode ter esse nível de retorno com a AI1B.',
             button: 'Agendar uma conversa'
+        },
+        about: {
+            greeting: 'Entenda a nossa missão com a AI1B',
+            paragraph1: 'Sou Gabriel Meneses, fundador da AI-First Business (AI1B). Ao longo de 5 anos no campo de batalha do mundo das startups de alto risco, desenvolvi uma visão de negócios sistêmica e holística, com foco em longo-prazo e pragmatismo. A AI1B nasceu dessa visão de seu fundador. Sabemos que o futuro do mundo com a AI é incerto e muitas vezes preocupante, e nós estamos aqui para ser o seu lugar seguro em meio a esse futuro caótico. Nossa missão é clara: ajudar a sua empresa a não apenas sobreviver, mas triunfar em frente a maior revolução tecnológica da história moderna.',
+            paragraph2: 'Unimos expertise técnica profunda em tecnologia e inteligência artificial, atrelada á modelos aplicáveis em gestão, processos, negócios e pessoas. Sabemos muito bem que tecnologia é apenas um meio para um fim, e esse fim é o sucesso do seu negócio. Nosso output final é apenas um: resultados.',
+            name: 'Gabriel S. Meneses',
+            role: 'Fundador'
         }
     },
     es: {
@@ -294,6 +315,13 @@ export const translations: Translations = {
             title: 'Estás a un paso de generar un 98% de ahorro',
             subtitle: 'Programa una reunión con un consultor experto y obtén más información.',
             button: 'Programar una conversación'
+        },
+        about: {
+            greeting: '¡Hola y bienvenido a nuestro sitio!',
+            paragraph1: 'Soy Charlotte, VP de Ventas y Operaciones. He estado con la familia de empresas Powerbilt Steel por más de 11 años. Una de las cosas que más me gustan de mi trabajo es ayudar a nuestros clientes a hacer realidad sus proyectos. Los clientes llaman con una idea y un miembro de nuestro talentoso equipo los ayuda a diseñar un edificio que se adapte mejor no solo a sus necesidades sino también a su presupuesto. ¡Nuestro equipo realmente se preocupa y se esfuerza por asegurar que cada visitante tenga una gran experiencia! ¡Aquí realmente eres parte de la familia!',
+            paragraph2: 'Fuera del trabajo me encanta pasar tiempo al aire libre con familiares y amigos. Acampar, hacer senderismo y paddleboarding son algunas de mis actividades favoritas. ¡Soy una amante de los animales y tengo 2 perros que a veces vienen a pasar el rato en la oficina con nosotros! Uno de mis dichos favoritos es "¡La vida es una aventura, no un destino!"',
+            name: 'Stephan Michaels',
+            role: 'Fundador'
         }
     }
 };
