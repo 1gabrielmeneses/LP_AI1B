@@ -2,6 +2,7 @@
 
 import { ArrowRight, Globe, Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState, useRef, useEffect } from "react";
 import { Language } from "@/translations";
@@ -31,10 +32,8 @@ export default function Navbar() {
     return (
         <header className="w-full relative z-40 py-6 px-6 md:py-8 md:px-8 lg:px-16 flex items-center justify-between bg-white">
             <div className="flex-1 z-50">
-                <Link href="/" className="text-2xl md:text-3xl font-semibold text-ai-gold tracking-tight lowercase first-letter:uppercase inline-flex">
-                    <span className="first-letter:uppercase">AI</span>
-                    <span className="first-letter:capitalize">1</span>
-                    <span className="first-letter:capitalize">Business</span>
+                <Link href="/" className="inline-flex items-center">
+                    <Image src="/media/businesslogo.png" alt="AI1Business Logo" width={160} height={40} className="h-6 md:h-8 lg:h-10 w-auto object-contain" priority />
                 </Link>
             </div>
 

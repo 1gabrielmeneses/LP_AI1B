@@ -10,7 +10,7 @@ export default function AboutSection() {
 
                 {/* Left Column - Image & Name */}
                 <div className="w-full md:w-1/3 flex flex-col items-center md:items-start pt-4 lg:pt-0">
-                    <div className="relative mb-6 w-full max-w-[240px] aspect-[4/5] ml-0 lg:ml-4">
+                    <div className="relative mb-6 w-full max-w-[240px] ml-0 lg:ml-4" style={{ aspectRatio: '4/5' }}>
                         <div className="absolute top-0 right-0 w-24 h-24 bg-[#b58757] -mt-5 -mr-5 z-0" />
                         <div className="absolute bottom-0 left-0 w-20 h-24 bg-[#4a3b2c] -mb-5 -ml-5 z-0" />
 

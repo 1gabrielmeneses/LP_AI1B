@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
@@ -100,10 +101,8 @@ export default function Footer() {
                 {/* Bottom Bar: Logo & Copyright */}
                 <div className="w-full flex flex-col md:flex-row items-center justify-between py-8 gap-6">
                     <div className="flex items-center">
-                        <Link href="/" className="w-10 h-10 bg-[#0a0f16] hover:bg-[#a8824f] transition-colors duration-300 flex items-center justify-center group overflow-hidden" aria-label="Home">
-                            <span className="text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
-                                D
-                            </span>
+                        <Link href="/" className="flex items-center group overflow-hidden" aria-label="Home">
+                            <Image src="/media/businesslogo.png" alt="AI1Business Logo" width={160} height={40} className="h-8 md:h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
                         </Link>
                     </div>
 
