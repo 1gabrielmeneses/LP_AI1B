@@ -6,6 +6,7 @@ import AgenticTransformation from "@/components/AgenticTransformation";
 import FinancialImpact from "@/components/FinancialImpact";
 import FinalCTA from "@/components/FinalCTA";
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -37,6 +38,7 @@ export default function Home() {
       <FinancialImpact />
       <FinalCTA />
       <AboutSection />
+      <Footer />
     </div>
   );
 }

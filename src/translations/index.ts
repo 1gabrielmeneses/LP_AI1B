@@ -79,7 +79,24 @@ type Translations = {
             paragraph2: string;
             name: string;
             role: string;
-        }
+        };
+        footer: {
+            support: string;
+            email: string;
+            about: string;
+            product: string;
+            contact: string;
+            aboutUs: string;
+            social: string;
+            linkedin: string;
+            youtube: string;
+            spotify: string;
+            instagram: string;
+            legal: string;
+            privacy: string;
+            terms: string;
+            copyright: string;
+        };
     }
 };
 
@@ -162,6 +179,23 @@ export const translations: Translations = {
             paragraph2: 'Outside of work I love spending time outdoors with family and friends. Camping, hiking, and paddle boarding are a few of my favorite activities. I\'m an animal lover and have 2 dogs that sometimes come and hang out at the office with us! One of my favorite sayings is "Life is an adventure not a destination!"',
             name: 'Stephan Michaels',
             role: 'Founder'
+        },
+        footer: {
+            support: 'SUPPORT',
+            email: 'support@ai1business.com',
+            about: 'ABOUT',
+            product: 'Product',
+            contact: 'Contact Us',
+            aboutUs: 'About Us',
+            social: 'SOCIAL MEDIA',
+            linkedin: 'LinkedIn',
+            youtube: 'YouTube',
+            spotify: 'Spotify',
+            instagram: 'Instagram',
+            legal: 'LEGAL',
+            privacy: 'Privacy Policy',
+            terms: 'Terms of Use',
+            copyright: '© 2026 AI1Business. All rights reserved.'
         }
     },
     pt: {
@@ -242,6 +276,23 @@ export const translations: Translations = {
             paragraph2: 'Unimos expertise técnica profunda em tecnologia e inteligência artificial, atrelada á modelos aplicáveis em gestão, processos, negócios e pessoas. Sabemos muito bem que tecnologia é apenas um meio para um fim, e esse fim é o sucesso do seu negócio. Nosso output final é apenas um: resultados.',
             name: 'Gabriel S. Meneses',
             role: 'Fundador'
+        },
+        footer: {
+            support: 'SUPORTE',
+            email: 'support@ai1business.com',
+            about: 'SOBRE',
+            product: 'Produto',
+            contact: 'Fale conosco',
+            aboutUs: 'Quem Somos',
+            social: 'REDES SOCIAIS',
+            linkedin: 'LinkedIn',
+            youtube: 'YouTube',
+            spotify: 'Spotify',
+            instagram: 'Instagram',
+            legal: 'LEGAL',
+            privacy: 'Política de Privacidade',
+            terms: 'Termos de Uso',
+            copyright: '© 2026 AI1Business. Todos os direitos reservados.'
         }
     },
     es: {
@@ -322,6 +373,23 @@ export const translations: Translations = {
             paragraph2: 'Fuera del trabajo me encanta pasar tiempo al aire libre con familiares y amigos. Acampar, hacer senderismo y paddleboarding son algunas de mis actividades favoritas. ¡Soy una amante de los animales y tengo 2 perros que a veces vienen a pasar el rato en la oficina con nosotros! Uno de mis dichos favoritos es "¡La vida es una aventura, no un destino!"',
             name: 'Stephan Michaels',
             role: 'Fundador'
+        },
+        footer: {
+            support: 'SOPORTE',
+            email: 'support@ai1business.com',
+            about: 'SOBRE NOSOTROS',
+            product: 'Producto',
+            contact: 'Contáctenos',
+            aboutUs: 'Quiénes Somos',
+            social: 'REDES SOCIALES',
+            linkedin: 'LinkedIn',
+            youtube: 'YouTube',
+            spotify: 'Spotify',
+            instagram: 'Instagram',
+            legal: 'LEGAL',
+            privacy: 'Política de Privacidad',
+            terms: 'Términos de Uso',
+            copyright: '© 2026 AI1Business. Todos los derechos reservados.'
         }
     }
 };
